@@ -1,0 +1,78 @@
+import numpy as np
+from PIL import Image
+
+from src.pp.utils import logging
+
+import cv2
+
+
+def check_image_size(input_):
+    """check image size"""
+    if not (
+        isinstance(input_, (list, tuple))
+        and len(input_) == 2
+        and isinstance(input_[0], int)
+        and isinstance(input_[1], int)
+    ):
+        raise TypeError(f"{input_} cannot represent a valid image size.")
+
+
+def resize(im, target_size, interp, backend="cv2"):
+    """resize image to target size"""
+    w, h = target_size
+    if w == im.shape[1] and h == im.shape[0]:
+        return im
+    if backend.lower() == "pil":
+        resize_function = _pil_resize
+    else:
+        resize_function = _cv2_resize
+        if backend.lower() != "cv2":
+            logging.warning(
+                f"Unknown backend {backend}. Defaulting to cv2 for resizing."
+            )
+    im = resize_function(im, (w, h), interp)
+    return im
+
+
+def _cv2_resize(src, size, resample):
+    return cv2.resize(src, size, interpolation=resample)
+
+
+def _pil_resize(src, size, resample):
+    if isinstance(src, np.ndarray):
+        pil_img = Image.fromarray(src)
+    else:
+        pil_img = src
+    pil_img = pil_img.resize(size, resample)
+    return np.asarray(pil_img)
+
+
+def flip_h(im):
+    """flip image horizontally"""
+    return cv2.flip(im, 1)
+
+
+def flip_v(im):
+    """flip image vertically"""
+    return cv2.flip(im, 0)
+
+
+def slice(im, coords):
+    """slice the image"""
+    x1, y1, x2, y2 = coords
+    im = im[y1:y2, x1:x2, ...]
+    return im
+
+
+def pad(im, pad, val):
+    """padding image by value"""
+    if isinstance(pad, int):
+        pad = [pad] * 4
+    if len(pad) != 4:
+        raise ValueError
+    if all(x == 0 for x in pad):
+        return im
+
+    chns = 1 if im.ndim == 2 else im.shape[2]
+    im = cv2.copyMakeBorder(im, *pad, cv2.BORDER_CONSTANT, value=(val,) * chns)
+    return im

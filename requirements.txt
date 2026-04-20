@@ -1,0 +1,44 @@
+# For CUDA support replace with: torch --index-url https://download.pytorch.org/whl/cu121
+torch
+# For GPU inference replace with: onnxruntime-gpu
+onnxruntime
+
+# Computer Vision
+numpy
+opencv-python
+Pillow
+shapely
+pyclipper
+scikit-learn
+
+# NLP / Transformers
+transformers==4.46.3
+tokenizers==0.20.3
+einops
+
+# OCR
+paddleocr
+
+# Image Quality Assessment
+pyiqa
+
+# Document / PDF
+pypdfium2
+lxml
+premailer
+openpyxl
+
+# Data
+pandas
+
+# Config / Utilities
+PyYAML
+ruamel.yaml
+filelock
+chardet
+colorlog
+addict
+easydict
+
+# UI
+gradio

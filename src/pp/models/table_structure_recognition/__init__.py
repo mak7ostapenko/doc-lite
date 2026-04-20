@@ -1,0 +1,1 @@
+from src.pp.models.table_structure_recognition.predictor import TablePredictor

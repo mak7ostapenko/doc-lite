@@ -1,0 +1,686 @@
+{
+  "input_path": "data/some_test_data/en/PXL_20250819_103840750.jpg",
+  "page_index": null,
+  "model_settings": {
+    "use_doc_preprocessor": true,
+    "use_seal_recognition": false,
+    "use_table_recognition": false,
+    "use_formula_recognition": false,
+    "use_chart_recognition": false,
+    "use_region_detection": true
+  },
+  "parsing_res_list": [
+    {
+      "block_label": "doc_title",
+      "block_content": "CS231A Course Notes 1: Camera Models ",
+      "block_bbox": [
+        427.0,
+        308.0,
+        2620.0,
+        423.0
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "Kenji Hata and Silvio Savarese ",
+      "block_bbox": [
+        923.0,
+        549.0,
+        2152.0,
+        636.0
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "Introduction ",
+      "block_bbox": [
+        272.0,
+        819.0,
+        1155.0,
+        920.0
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "The camera is one of the most essential tools in computer vision. It is the mechanism by which we can record the world around us and use its output photographs - for various applications. Therefore, one question we must ask in introductory computer vision is: how do we model a camera?",
+      "block_bbox": [
+        248.0,
+        1012.0,
+        2801.0,
+        1377.0
+      ]
+    },
+    {
+      "block_label": "paragraph_title",
+      "block_content": "2 Pinhole cameras ",
+      "block_bbox": [
+        249.0,
+        1518.0,
+        1368.0,
+        1620.0
+      ]
+    },
+    {
+      "block_label": "image",
+      "block_content": "object barrier film aperture ",
+      "block_bbox": [
+        553.0,
+        1797.0,
+        2530.0,
+        2517.0
+      ]
+    },
+    {
+      "block_label": "figure_title",
+      "block_content": "Figure l: A simple working camera model: the pinhole camera model.",
+      "block_bbox": [
+        353.0,
+        2627.0,
+        2745.0,
+        2711.0
+      ]
+    },
+    {
+      "block_label": "text",
+      "block_content": "Let's design a simple camera system - a system that can record an image of an object or scene in the 3D world. This camera system can be designed by placing a barrier with a small aperture between the 3D object and a photographic film or sensor. As Figure 1 shows, each point on the 3D object mits multiple rays lightoutwards. Without a barrier in placeevery point on the film will be influenced by light rays emitted from every point on the t through he aperture nd h mTherren ablih  mappi e int Dctdthe f.Th h the film xe nmageth Dject means  th ",
+      "block_bbox": [
+        265.0,
+        2821.0,
+        2844.0,
+        3842.0
+      ]
+    },
+    {
+      "block_label": "number",
+      "block_content": "I ",
+      "block_bbox": [
+        1531.0,
+        3949.0,
+        1559.0,
+        4008.0
+      ]
+    }
+  ],
+  "layout_det_res": {
+    "boxes": [
+      {
+        "coordinate": [
+          265.37646484375,
+          2821.241455078125,
+          2844.0126953125,
+          3842.742431640625
+        ],
+        "label": "text",
+        "score": 0.9847776293754578
+      },
+      {
+        "coordinate": [
+          248.1483154296875,
+          1012.1776733398438,
+          2801.49658203125,
+          1377.55419921875
+        ],
+        "label": "text",
+        "score": 0.9655622839927673
+      },
+      {
+        "coordinate": [
+          553.7852172851562,
+          1797.3201904296875,
+          2530.66064453125,
+          2517.5390625
+        ],
+        "label": "image",
+        "score": 0.9393703937530518
+      },
+      {
+        "coordinate": [
+          249.3526611328125,
+          1518.3857421875,
+          1368.7890625,
+          1620.64599609375
+        ],
+        "label": "paragraph_title",
+        "score": 0.9175451993942261
+      },
+      {
+        "coordinate": [
+          272.085693359375,
+          819.967041015625,
+          1155.81982421875,
+          920.5927734375
+        ],
+        "label": "paragraph_title",
+        "score": 0.9161198139190674
+      },
+      {
+        "coordinate": [
+          353.4295654296875,
+          2627.13818359375,
+          2745.78662109375,
+          2711.00830078125
+        ],
+        "label": "figure_title",
+        "score": 0.8965904712677002
+      },
+      {
+        "coordinate": [
+          1531.39013671875,
+          3949.92822265625,
+          1559.517333984375,
+          4008.15380859375
+        ],
+        "label": "number",
+        "score": 0.7770861387252808
+      },
+      {
+        "coordinate": [
+          427.998046875,
+          308.45330810546875,
+          2620.5888671875,
+          423.62066650390625
+        ],
+        "label": "doc_title",
+        "score": 0.6715812087059021
+      },
+      {
+        "coordinate": [
+          923.0885620117188,
+          549.2234497070312,
+          2152.355712890625,
+          636.0021362304688
+        ],
+        "label": "text",
+        "score": 0.5653853416442871
+      }
+    ]
+  },
+  "overall_ocr_res": {
+    "rec_texts": [
+      "CS231A Course Notes 1: Camera Models",
+      "Kenji Hata and Silvio Savarese",
+      "Introduction",
+      "The camera is one of the most essential tools in computer vision. It is the",
+      "mechanism by which we can record the world around us and use its output -",
+      "photographs - for various applications. Therefore, one question we must ask",
+      "in introductory computer vision is: how do we model a camera?",
+      "2 Pinhole cameras",
+      "object",
+      "barrier",
+      "film",
+      "aperture",
+      "Figure l: A simple working camera model: the pinhole camera model.",
+      "Let's design a simple camera system - a system that can record an image",
+      "of an object or scene in the 3D world. This camera system can be designed",
+      "by placing a barrier with a small aperture between the 3D object and a",
+      "photographic film or sensor. As Figure 1 shows, each point on the 3D object",
+      "mits multiple rays lightoutwards. Without a barrier in placeevery point",
+      "on the film will be influenced by light rays emitted from every point on the",
+      "t  ",
+      "through he aperture nd h mTherren ablih ",
+      " mappi e int Dctdthe f.Th  ",
+      "h the film xe nmageth Dject means  th",
+      "I"
+    ],
+    "rec_scores": [
+      0.9898254871368408,
+      0.9920996427536011,
+      0.9997081160545349,
+      0.9713401198387146,
+      0.9862176775932312,
+      0.9825555682182312,
+      0.9914121627807617,
+      0.9992011785507202,
+      0.9981825351715088,
+      0.982857882976532,
+      0.998839795589447,
+      0.9998600482940674,
+      0.9829028844833374,
+      0.9808157086372375,
+      0.980710506439209,
+      0.9755460619926453,
+      0.9750782251358032,
+      0.8191622495651245,
+      0.974001407623291,
+      0.47322508692741394,
+      0.6911974549293518,
+      0.6636389493942261,
+      0.7327795624732971,
+      0.5055465698242188
+    ],
+    "dt_polys": [
+      [
+        [
+          422,
+          279
+        ],
+        [
+          2648,
+          303
+        ],
+        [
+          2646,
+          457
+        ],
+        [
+          420,
+          433
+        ]
+      ],
+      [
+        [
+          916,
+          526
+        ],
+        [
+          2176,
+          533
+        ],
+        [
+          2175,
+          664
+        ],
+        [
+          915,
+          658
+        ]
+      ],
+      [
+        [
+          448,
+          801
+        ],
+        [
+          1180,
+          820
+        ],
+        [
+          1176,
+          959
+        ],
+        [
+          444,
+          941
+        ]
+      ],
+      [
+        [
+          255,
+          976
+        ],
+        [
+          2821,
+          1019
+        ],
+        [
+          2819,
+          1142
+        ],
+        [
+          253,
+          1100
+        ]
+      ],
+      [
+        [
+          254,
+          1079
+        ],
+        [
+          2819,
+          1115
+        ],
+        [
+          2818,
+          1228
+        ],
+        [
+          253,
+          1192
+        ]
+      ],
+      [
+        [
+          248,
+          1172
+        ],
+        [
+          2827,
+          1206
+        ],
+        [
+          2826,
+          1323
+        ],
+        [
+          247,
+          1289
+        ]
+      ],
+      [
+        [
+          246,
+          1262
+        ],
+        [
+          2443,
+          1292
+        ],
+        [
+          2442,
+          1411
+        ],
+        [
+          245,
+          1381
+        ]
+      ],
+      [
+        [
+          243,
+          1496
+        ],
+        [
+          1396,
+          1521
+        ],
+        [
+          1393,
+          1658
+        ],
+        [
+          240,
+          1634
+        ]
+      ],
+      [
+        [
+          674,
+          1775
+        ],
+        [
+          860,
+          1775
+        ],
+        [
+          860,
+          1886
+        ],
+        [
+          674,
+          1886
+        ]
+      ],
+      [
+        [
+          1465,
+          1790
+        ],
+        [
+          1650,
+          1799
+        ],
+        [
+          1646,
+          1887
+        ],
+        [
+          1461,
+          1878
+        ]
+      ],
+      [
+        [
+          2333,
+          1814
+        ],
+        [
+          2443,
+          1814
+        ],
+        [
+          2443,
+          1886
+        ],
+        [
+          2333,
+          1886
+        ]
+      ],
+      [
+        [
+          1727,
+          1940
+        ],
+        [
+          1953,
+          1934
+        ],
+        [
+          1955,
+          2019
+        ],
+        [
+          1729,
+          2024
+        ]
+      ],
+      [
+        [
+          346,
+          2603
+        ],
+        [
+          2772,
+          2616
+        ],
+        [
+          2771,
+          2741
+        ],
+        [
+          345,
+          2729
+        ]
+      ],
+      [
+        [
+          376,
+          2799
+        ],
+        [
+          2878,
+          2818
+        ],
+        [
+          2877,
+          2935
+        ],
+        [
+          376,
+          2916
+        ]
+      ],
+      [
+        [
+          268,
+          2891
+        ],
+        [
+          2868,
+          2914
+        ],
+        [
+          2867,
+          3027
+        ],
+        [
+          267,
+          3004
+        ]
+      ],
+      [
+        [
+          272,
+          2988
+        ],
+        [
+          2870,
+          3001
+        ],
+        [
+          2869,
+          3114
+        ],
+        [
+          271,
+          3101
+        ]
+      ],
+      [
+        [
+          268,
+          3076
+        ],
+        [
+          2868,
+          3087
+        ],
+        [
+          2867,
+          3210
+        ],
+        [
+          267,
+          3200
+        ]
+      ],
+      [
+        [
+          266,
+          3167
+        ],
+        [
+          2864,
+          3179
+        ],
+        [
+          2863,
+          3305
+        ],
+        [
+          265,
+          3292
+        ]
+      ],
+      [
+        [
+          268,
+          3259
+        ],
+        [
+          2860,
+          3278
+        ],
+        [
+          2859,
+          3398
+        ],
+        [
+          267,
+          3378
+        ]
+      ],
+      [
+        [
+          264,
+          3339
+        ],
+        [
+          2870,
+          3361
+        ],
+        [
+          2869,
+          3505
+        ],
+        [
+          263,
+          3483
+        ]
+      ],
+      [
+        [
+          266,
+          3436
+        ],
+        [
+          2868,
+          3453
+        ],
+        [
+          2867,
+          3597
+        ],
+        [
+          265,
+          3580
+        ]
+      ],
+      [
+        [
+          256,
+          3524
+        ],
+        [
+          2874,
+          3539
+        ],
+        [
+          2873,
+          3696
+        ],
+        [
+          255,
+          3681
+        ]
+      ],
+      [
+        [
+          260,
+          3615
+        ],
+        [
+          2876,
+          3636
+        ],
+        [
+          2875,
+          3790
+        ],
+        [
+          259,
+          3769
+        ]
+      ],
+      [
+        [
+          1497,
+          3926
+        ],
+        [
+          1599,
+          3926
+        ],
+        [
+          1599,
+          4035
+        ],
+        [
+          1497,
+          4035
+        ]
+      ]
+    ]
+  }
+}
