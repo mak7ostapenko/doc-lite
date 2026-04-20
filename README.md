@@ -1,4 +1,4 @@
-# ocr-py — Structured OCR Pipeline
+# doc-lite — Structured OCR Pipeline
 
 ## What is this?
 
@@ -14,7 +14,7 @@ Built on top of [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) and [Padd
 
 ## vs PaddleX / PaddleOCR
 
-| | PaddleX | ocr-py |
+| | PaddleX | doc-lite |
 |---|---|---|
 | RAM | All models loaded eagerly at startup | Lazy ONNX sessions + `lite` / `full` / `ocr-only` modes |
 | Language routing | Manual config per language | Auto-maps `uk` → cyrillic checkpoint |
